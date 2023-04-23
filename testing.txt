@@ -1,3 +1,5 @@
 Putting first change in the txt file
 
 putting second change in the txt file
+
+adding third change in the txt file and checking changes 
