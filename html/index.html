@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webpage</title>
     <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
 
     <style>
@@ -53,6 +53,16 @@
             background-color: transparent;
             text-decoration: underline;
         }
+        .txt-format{
+            background-color: aquamarine;
+        }
+        #button {
+            background-color: paleturquoise;
+        }
+        #line{
+            background-color: seagreen;
+            height: 3px;
+        }
     </style>
 </head>
 
@@ -71,8 +81,8 @@
     </div>
     <div>
         <p>Learning subscript and superscript</p>
-        <p>C + O<sub>2</sub> -> CO<sub>2</sub></p>
-        <p>(a+b)<sup>2</sup>= a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+        <p class="txt-format">C + O<sub>2</sub> -> CO<sub>2</sub></p>
+        <p class="txt-format">(a+b)<sup>2</sup>= a<sup>2</sup>+b<sup>2</sup>+2ab</p>
 
     </div>
     <div>
@@ -129,11 +139,16 @@
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1024px-Googleplex_HQ_%28cropped%29.jpg" 
             alt="image linked to google website" />
         </a>
+        <!-- <a href="mailto:ashutosh@gmail.com">Mail Ashutosh</a> sends mail to the provided email address
+        <a href="tel:9429312399">Call Ashutosh</a> tries to call written phone number
+        <a href="#me">About Me  takes to the element having id="me"   -->
+        <p>Adding button</p>
+        <button id="button">Click Me</button>
 
     </div>
 
     <div>
-        <hr>
+        <hr id="line">
         <p>Quotation</p>
         <p>Here is a quote from WWF's website:</p>
         <blockquote cite="http://www.worldwildlife.org/who/index.html">
@@ -144,7 +159,7 @@
         </blockquote>
         <hr>
         <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-        <address>
+        <address id="me">
             Written by Ashutosh Meher.<br>
             Visit us at:<br>
             ashutosh@gmail.com<br>
