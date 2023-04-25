@@ -6,21 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
+
+    <style>
+        h3 {
+            color: blue;
+            background-color: aquamarine;
+        }
+
+        ul {
+            color: darkseagreen;
+        }
+
+        ol {
+            color: darkgreen;
+        }
+
+        img {
+            width: 590px;
+        }
+
+        del {
+            color: dodgerblue;
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <p> THis is a paragraph</p>
+    <h1>Hello World</h1> <!--Heading--> <!--Size decreases from h1 to h6-->
+    <p> THis is a paragraph</p> <!--paragraph starts in new line-->
     <p>Another paragraph</p>
     <div>
         <p>Adding link below with image</p>
         <hr>
-        <a href="https://www.google.com"> google main website</a>
+        <a href="https://www.google.com"> google main website</a> <!--anchor tag used to link websites-->
         <hr>
-        
-        <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1024px-Googleplex_HQ_%28cropped%29.jpg"
-        alt="google" />
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1024px-Googleplex_HQ_%28cropped%29.jpg"
+            alt="google" /> <!--image tag to insert image can also be used inside anchor tag as a hyperlink-->
     </div>
     <div>
         <p>Learning subscript and superscript</p>
@@ -38,7 +85,7 @@
     <hr>
     <div>
         <p>Adding ordered and unordered list</p>
-        <ol>
+        <ol> <!--Ordered List-->
             <li>First</li>
             <li>Second</li>
             <li>Third</li>
@@ -53,11 +100,60 @@
             <li>Second</li>
             <li>Third</li>
         </ol>
-        <ul>
+        <ul> <!--Unordered List-->
             <li>First</li>
             <li>Second</li>
             <li>Third</li>
         </ul>
+    </div>
+
+    <div>
+        <p>Checking <span style="color: brown ; background-color: bisque;">span</span> <span
+                style="color: aqua; background-color: crimson;">tag</span> </p> <!--inline styling-->
+        <h3>styling in html</h3> <!--internal styling in the head section-->
+
+        <pre> <!--text remains in the same layout as written-->
+            This is the use of pre tag where we can show content in the same layout as we have written.
+            So, we can see multiple spaces which is ignored in other tags like paragraph tag.
+        </pre>
+        <h5 style="text-align: center;">Centered headline</h5>
+        <hr>
+
+    </div>
+
+    <div>
+        
+        <p>Below is an image used as a link to google website</p>
+        <a href="https://google.com">
+            <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1024px-Googleplex_HQ_%28cropped%29.jpg" 
+            alt="image linked to google website" />
+        </a>
+
+    </div>
+
+    <div>
+        <hr>
+        <p>Quotation</p>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation
+            organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world
+            to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they
+            live.
+        </blockquote>
+        <hr>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <address>
+            Written by Ashutosh Meher.<br>
+            Visit us at:<br>
+            ashutosh@gmail.com<br>
+            Flat 9, New Sector, Delhi<br>
+            India
+        </address>
+        <p><cite>About WHO</cite> by Ashutosh Meher. Written in 2023.</p>
+
+
     </div>
 
 </body>
