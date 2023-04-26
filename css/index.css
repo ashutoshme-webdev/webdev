@@ -1,0 +1,82 @@
+p{
+    color: red;
+}
+
+#parad {
+    color: blue;
+}
+.para{
+    color: green;
+}
+#divid .spa{
+    color: grey;
+}
+.div #spanid{
+    color: coral;
+}
+
+div #spanid{
+    color:aqua
+}
+
+#spanid:hover{
+    color: green;
+}
+.card{
+    background-color: gray;
+    width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+
+   
+}
+#image{
+    border-radius: 25px;
+    padding: 20px
+     
+}
+#line{
+    width: 250px;
+    height: 1px;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+h3{
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 0;
+
+}
+#para{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.grad{
+    background-image: linear-gradient(red, blue) ;
+    height: 250px;
+    width: 500px;
+}
+
+#shad{
+    text-shadow: 3px 3px 3px blue ;
+}
+
+.over{
+    overflow: scroll;
+    max-height: 150px;
+    border: 2px solid;
+}
+.corner {
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    border: 2px solid black;
+    transform: translate(25px,30px);
+    transform: skew(135deg);
+}
