@@ -80,3 +80,61 @@ h3{
     transform: translate(25px,30px);
     transform: skew(135deg);
 }
+
+
+.posi{
+    height: 2000px;
+    width: 100vw;
+    background-color: yellow;
+    position: relative;
+}
+.pos{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    display: inline-block;
+
+}
+#box2{
+    position: absolute;
+    left: 970px;
+    top: 20px;
+}
+#box1{
+    position: fixed;
+    left: 400px;
+    top: 10px;
+    
+}
+#box3{
+    position: sticky;
+    top: 70px;
+}
+/* #box4{
+    position: fixed;
+    top: 400px;
+} */
+
+.pos3{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    border: 1px solid black;
+
+}
+
+#translated{
+    transform: perspective(15px) translateZ(-5px);
+
+}
+#scaled{
+    margin-left: 100px;
+    transform: perspective(500px) scaleZ(2) rotateX(25deg) rotateY(45deg);
+}
+
+.flexcon {
+    display: flex;
+    flex-direction: column;
+    
+}
