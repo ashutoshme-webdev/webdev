@@ -41,3 +41,12 @@ Day 6 - 28/04/23
                     z-index, perspective, css overflow , css transform style,
                     background-image, box-sizing, scale and translate in z-axis,
                     creating a web page showcasing parallax effect.
+
+Day 7 - 29/04/23
+=> Learned Topics - css grid, grid elements, display properties, inline-grid/grid,
+                    row-gap, column-gap, grid-template-column, grid-template-row,
+                    grid-row-start/end, grid-column-start/end, css flex-wrap/nowrap,
+                    overflow-x, overflow-y, grid-template-area, grayscale filter,
+                    box-shadow, drop=shadow, opacity, transition, css font-weight,
+                    creating webpage showing scaling and grayscale effect on images,
+                    creating a product card showing details about the product.
