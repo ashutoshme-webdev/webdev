@@ -1,0 +1,24 @@
+.container{
+     height: 500px;
+     width: 500px;
+     background-color: green;
+     border: 3px solid red;
+     display: flex;
+}
+
+.box{
+    background-color: aqua;
+    border: 1px solid orange;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    transition: background-color, transform 2s,2s linear 1s;
+    /* transition: transform 2s linear 1s; */
+
+}
+
+.box:hover{
+    transform: rotate(45deg);
+    background-color: hotpink;
+
+}
