@@ -1,2 +1,2 @@
 # webdev
-https://ashutoshme-webdev.github.io/webdev/html
+[html]https://ashutoshme-webdev.github.io/webdev/html
