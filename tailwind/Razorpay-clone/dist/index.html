@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://ashutoshme-webdev.github.io/webdev/tailwind/Razorpay-clone/main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <script src="https://unpkg.com/feather-icons"></script>
@@ -68,7 +68,7 @@
           <!-- logo -->
           <a href="/" class="cursor-pointer py-7 pr-7">
               <img
-              src="/assets/logo-803a4a65.svg"
+              src="./images/logo.svg"
               width="125px"
               height="30px"/>
           </a>
@@ -134,7 +134,7 @@
 
           <div class="flex space-x-6">
               <img
-                  src="/assets/india-flag-62cf945b.svg"
+                  src="./images/india-flag.svg"
                   width="28px"
                   height="20px"
                   class="hidden lg:block"
@@ -179,13 +179,13 @@
           >Sign Up Now</button>
       </div>
       <!--right part-->
-      <img src="/assets/hero-illustration-783a8736.jpg" alt=""
+      <img src="./images/hero-illustration.jpg" alt=""
       class="w-full max-w-[680px]">
   </div>
 
   <!--shape part-->
   <div class="w-[103%] absolute left-0 right-0">
-      <img src="/assets/hero-shape-55e07e29.svg" alt=""
+      <img src="./images/hero-shape.svg" alt=""
       class="w-full object-fill ">
   </div>
 
@@ -193,12 +193,12 @@
 
   <!--feature section - 1-->
   <section class="relative mt-[190px] overflow-hidden">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACnCAMAAADDu4vNAAAAOVBMVEUAAADT5PnT5fjj4//S5PLS5PbS5Pja5/nY4vnT5/fR5PbV5frBzOXZ5/nR4/7T5PnP3/TS4vjV5vv5nSPYAAAAE3RSTlMATEIJEzkmHA4hKy8KFxw0MD49U7XcFQAAB5ZJREFUeNrt3ed22zAMBWDuKVqW3/9hO1ytACbIQnbTc3j/9euKIg/5RgTFzxgrpcpa7MHN/7THhRYRcz0Wv9iDsFk+48Qe22lxJ73a7WDLHyvQ1NHUHzOIhX4Lq/0+1Cwl+HJnxOxm+yEsm5XN1Gam0cJKut80ZfuherlHPHOVqdVc3exqCbF8mVkpwQmk7LafUnBS1cHMBbbBflKno02Iraf0bPKQu3iGsvSkiTKHWHyaRiwgZo52Y1g5HYGtHSk0TVlCzD0tIGYqRh29p03Br0zIRiPPX5/po5XXFigzTzNnS3KPh89kWZDnqWm0gJiu2IKYJExgBr+bSoiAvC6afnsgNiOWV/OIxX5LyGu5e2Hx8J6zxl1sCbHcbWKLRWwB33QxfbGowLWFcPKlPTQ0+05L0KbVxMHy02Zg+6NB+3m+m/V3d0stFi82x7D00kZGRkZGRkZGRl5n8t6828I/MnMwbffPPzULT3PQFGmmz24nWxBT0Api/mgBfgLa7VG3gthttRmxXDe3WkLMMU0r8MmZsrSZ7DaHWKxZQKwg5ne7IVaEiEhDkgkLiIlOmxGzjbYgpuq2nP9WQv4lh/xLsWKSsNuTJsoKYuZpGrFwtICaPGTua0Gnd7agsa8FLaRddqSp50hxC4y2uyCPB382e9Ej1TdaaX2k9pk+WkDNwT6VZQk12KDaj9sE3j1Ic2KNhKb7LSLmVwuImX4z+xvloVLELayWCZMVc7v5i83RpjO4KlstXmweXnE+MCvQrKEsIGaWL2ZMEHveZdNX0p+ykZGRkZGRkQvj092Ziy18sfjT9Fe73+MnrWy3FoA6azlafNrcaJljgjAnYXeZXpsTovOODr6JqqXVHnXLNbO72eOnDQ1uMeNZQMzvNiOWGs31mtstEj0gYTNilrAJ6/cqpi4ytBvsu8OO7gYnym6vLVBWsDvngIFukNEDEgZ6QNL43aDv7Ab5d73yu0H6nBbKDHnXsq+YIqz8MUmYAYb3gKHRNGoe/omjqdUcYeJNluudn220/PwlqJowWzaLSF/oG600mqmuJJA1U69sWmCnpjFTnRbbTN36LaxWEAuvzS9Sqr0/u8jCkab4y+5fTP20pI+mHWKZa+4gW332DUxfbiMjIyMjIyMXxqTHw940w8Tf2f3xmD9pDl5DilSx8BeWkf5xRsy2me60x29zyMrmVLVQtYzYvJmGn41Uv6nNRM30wdpX8Pl+s70WEXN1y6slxPKp1shI5zAzVmUujaYIm4jOr3NVpmzujGhjrLSlOqP+ldLQDGP1NKsbDP+2G7wzzp/jroiHBnvAitHd4Ez2gNAKafTz9NzvQdOvbfoba1kpzX89jsDI19QZsdxr+WwJnBbc8mYGsYCsbNZVW9pswkz9nTnQvdWvkUzdpvzHQrP1X/ssiKmnPRCzf0znRVknDsHN9FiENn+xgtkMzb8y32hFjIyMjIyM0OH3SMo6DQx2RgravcfEdTYr0EuVWYEeye8Gr4dog/2QQSwgnVHgdEbMayn8upfRLc2IWcSWzTRqsB+qmiZ7JENM0vtkj+QOxpjWlxFLQszkxD1+j6S4PdJudGcEjT+FT3Cm8H26Ryr/VY/kOFP4WN3gO3skz+iRzJU9Ev+5S/VIjG5JcHqk67slspvnWzqb634/De2T9Pjd0nRZt4T/rM0RnVHnz9qmVOmRNGmwH7KvzdZ6pGTVvHdBu8UvltvMcM0jfVOBdi+wM7obYMt9TOEbGRkZGRkZGakmmPCPTDeZYZnY4uD0OpGg6dxolmuPk4XXZuAEPxsQ0+eqcEbWt2TE0m5Bdpqr241hEbNTqwFmIeGmd3OIxW6T3VYQMzUzJ/NI8xGRDtghlt9ojPlWdjV1MHzi3kLMMSMMdMWSsOtnlsEWbTp3g998Ct+NsPYpfJa1ppg/he+d9w0WoYh14o5aE05P5psoK9wZkriF11P4DDldj7YZMUsaf+Legpg62QR6Utx03VLNAjJrwfRbrE3cK4j5s4W9E+2e1et7ze4Wsfm9veZajZjJrM62INP6FLSAmEGsKDitz7/ZdPEeXGgXX4D5vzeDm/mAjbp3ZGRkZGTk0pjoiv5GJlDjJ1g4Dc9gtjwNXOXhligrT3Mnk9DibrwUcIWP220zAe2xm7vCMmq8aNU9cW9GLL3rk5zfLQpOztP1GDZ9YjcOTugpfIzdODg7dNzQ1oSRb7tDB2bxWxzpflTvnMLHiT39j9AiNXGvf4cOaM3NNifx0h068El6qdFmqgfkBfnJ0sQ2elqflv121RtqbrTUP5kvtJqEVnbjZkoK7pSRf5nFrCBm/s5kr/ETzAQtYCa+jY2MjIyMjIz8o8S7TTfECsNMgzloGrEAjPdpRukPW3qaRWxGLGvBjJNrQpsp3W2p0fJmAjNetNyiEHvUdt4wiPlrLCOWPtMNzkdjrMoMu/VP3GNFXbvSVjCm8Gl69TQj/+MOHX+Xb7FDR9ztQ92gZ1hp3KHDEEbsxsGIQXbe8IQR0/XeZVbwMiNPA7uZb7Sy2ULsvAGtfQU0L1OGz/dpRsw+SR1ML5h17rxREDOIBcGOt0qqFBDTF5qUymEmaFtW4+QHdW+CRelCpzcAAAAASUVORK5CYII=" alt="" loading="lazy" 
+      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy" 
       width="233"
       height="167"
       class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
 
-      <img src="data:image/png;base64,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" alt="" loading="lazy"
+      <img src="./images/feature-section1-dottedrows.png" alt="" loading="lazy"
       width="233"
       height="167"
       class="absolute top-[3rem] right-0 inline-block rotate-180">
@@ -268,14 +268,14 @@
               </div>
 
               </div>
-              <img src="/assets/payment-suite-f883499d.png" alt=""
+              <img src="./images/payment-suite.png" alt=""
               class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block" >
           </div>
 
           <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-5 ">
               <!--Box1-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                  <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                  <img src="./images/payment-link-icon.svg" alt=""
                   class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                   transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                   
@@ -332,7 +332,7 @@
               </div>
               <!--Box2-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                <img src="./images/payment-link-icon.svg" alt=""
                 class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                 transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                 
@@ -389,7 +389,7 @@
             </div>
               <!--Box3-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                <img src="./images/payment-link-icon.svg" alt=""
                 class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                 transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                 
@@ -446,7 +446,7 @@
             </div>
               <!--Box4-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                <img src="./images/payment-link-icon.svg" alt=""
                 class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                 transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                 
@@ -503,7 +503,7 @@
             </div>
               <!--Box5-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                <img src="./images/payment-link-icon.svg" alt=""
                 class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                 transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                 
@@ -560,7 +560,7 @@
             </div>
               <!--Box6-->
               <div class="w-full min-h-[15rem] relative cursor-pointer group ">
-                <img src="/assets/payment-link-icon-68c91ae5.svg" alt=""
+                <img src="./images/payment-link-icon.svg" alt=""
                 class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                 transition-all duration-200 group-hover:bg-gradient-to-bl from-blue-500 to-cyan-400">
                 
@@ -624,7 +624,7 @@
 
   <!-- feature section 2-->
   <section
-  class="bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]">
+  class="bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat  bg-cover pb-[450px] bg-[center_left_-550px] mt-14 pt-[20rem] translate-x-[-20]">
      
   <div
   class="w-10/12 max-w-[1080px]  mx-auto relative pt-4 ">
@@ -636,11 +636,11 @@
 
           <!-- main feaeture box-->
           <div class="w-full min-h[440px] flex flex-col relative">
-              <img src="/assets/x-flame-1-12c499a3.png" alt=""
+              <img src="./images/x-flame-1.png" alt=""
               loading="lazy"
               class="absolute -top-[142px] -left-[140px] w-[200px]">
               
-              <img src="/assets/x-flame-2-9092ee28.png" alt=""
+              <img src="./images/x-flame-2.png" alt=""
               loading="lazy"
               class="absolute top-[150px] -right-[180px] w-[200px]">
 
@@ -650,7 +650,7 @@
                   <div class="flex flex-col justify-between items-start h-full w-full gap-12 z-20">
                       <h3 class="font-mullish text-[28px] text-white font-bold leading-10 max-w-[500px]"
                       >Manage your company’s finances with 
-                          <img src="/assets/razorpayX-dbf3ba53.svg" alt=""
+                          <img src="./images/razorpayX.svg" alt=""
                           width="168px"
                           height="32px"
                           class="inline">
@@ -714,7 +714,7 @@
                       </div>
                   </div>
                   <!--background image for content box-->
-                  <img src="/assets/buisness-banking-f8dca509.png" alt=""
+                  <img src="./images/buisness-banking.png" alt=""
                   class="max-w-[600px] absolute right-0 bottom-0 z-4 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
               </div>
 
@@ -726,7 +726,7 @@
                 >
                   <!-- box icon -->
                   <img
-                    src="/assets/current-icon-0df323eb.svg"
+                    src="images/current-icon.svg"
                     class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon 
                     transition-all duration-200 group-hover:bg-gradient-to-bl from-lightBlue500 to-purple-800"
                   />
@@ -789,7 +789,7 @@
                 >
                   <!-- box icon -->
                   <img
-                    src="/assets/current-icon-0df323eb.svg"
+                    src="images/current-icon.svg"
                     class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon 
                     transition-all duration-200 group-hover:bg-gradient-to-bl from-lightBlue500 to-purple-800"
                   />
@@ -852,7 +852,7 @@
                 >
                   <!-- box icon -->
                   <img
-                    src="/assets/current-icon-0df323eb.svg"
+                    src="images/current-icon.svg"
                     class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon 
                     transition-all duration-200 group-hover:bg-gradient-to-bl from-lightBlue500 to-purple-800"
                   />
@@ -950,9 +950,9 @@
   <!--new feeatures -->
   <section class="bg-white relative">
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
-          <img src="data:image/png;base64,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" alt=""
+          <img src="./images/feature-section1-dottedrows.png" alt=""
           class="absolute w-[233px] left-[300px] -top-[6rem] z-10">
-          <img src="data:image/png;base64,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" alt=""
+          <img src="./images/feature-section1-dottedrows.png" alt=""
           class="absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10" >
 
           <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
@@ -973,7 +973,7 @@
               bg-no-repeat hover:scale-105 transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)]
               bg-white" >
-                  <img src="/assets/razorpayXicon-3345804c.svg" alt=""
+                  <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
                   <p
@@ -995,7 +995,7 @@
               class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
-                  <img src="/assets/razorpayXicon-3345804c.svg" alt=""
+                  <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
                   <p
@@ -1017,7 +1017,7 @@
               class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
-                  <img src="/assets/razorpayXicon-3345804c.svg" alt=""
+                  <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
                   <p
@@ -1039,7 +1039,7 @@
               class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
-                  <img src="/assets/razorpayXicon-3345804c.svg" alt=""
+                  <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
                   <p
@@ -1061,7 +1061,7 @@
               class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
               hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
-                  <img src="/assets/razorpayXicon-3345804c.svg" alt=""
+                  <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
                   <p
@@ -1096,56 +1096,56 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
               <!--card1-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card2-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card3-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card4-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card5-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card6-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card7-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
               </div>
               <!--card8-->
               <div>
-                  <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt=""
+                  <img src="./images/instant-activation-icon.svg" alt=""
                   >
                   <h3 class="font-mullish text-white text-lg font-bold my-4">Instant Activation</h3>
                   <p class="font-mullish text-white opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
@@ -1177,9 +1177,9 @@
         <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
         class="absolute w-full h-[150px] top-0 z-50">    </div>
 
-        <img src="/assets/comanies-f772fc25.png" alt=""
+        <img src="./images/comanies.png" alt=""
         class="absolute  h-auto object-cover companiesList">
-        <img src="/assets/comanies-f772fc25.png" alt=""
+        <img src="./images/comanies.png" alt=""
         class="absolute  h-auto object-cover followList">
 
         <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
@@ -1198,7 +1198,7 @@
 
     <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
 
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACnCAMAAADDu4vNAAAAOVBMVEUAAADT5PnT5fjj4//S5PLS5PbS5Pja5/nY4vnT5/fR5PbV5frBzOXZ5/nR4/7T5PnP3/TS4vjV5vv5nSPYAAAAE3RSTlMATEIJEzkmHA4hKy8KFxw0MD49U7XcFQAAB5ZJREFUeNrt3ed22zAMBWDuKVqW3/9hO1ytACbIQnbTc3j/9euKIg/5RgTFzxgrpcpa7MHN/7THhRYRcz0Wv9iDsFk+48Qe22lxJ73a7WDLHyvQ1NHUHzOIhX4Lq/0+1Cwl+HJnxOxm+yEsm5XN1Gam0cJKut80ZfuherlHPHOVqdVc3exqCbF8mVkpwQmk7LafUnBS1cHMBbbBflKno02Iraf0bPKQu3iGsvSkiTKHWHyaRiwgZo52Y1g5HYGtHSk0TVlCzD0tIGYqRh29p03Br0zIRiPPX5/po5XXFigzTzNnS3KPh89kWZDnqWm0gJiu2IKYJExgBr+bSoiAvC6afnsgNiOWV/OIxX5LyGu5e2Hx8J6zxl1sCbHcbWKLRWwB33QxfbGowLWFcPKlPTQ0+05L0KbVxMHy02Zg+6NB+3m+m/V3d0stFi82x7D00kZGRkZGRkZGRl5n8t6828I/MnMwbffPPzULT3PQFGmmz24nWxBT0Api/mgBfgLa7VG3gthttRmxXDe3WkLMMU0r8MmZsrSZ7DaHWKxZQKwg5ne7IVaEiEhDkgkLiIlOmxGzjbYgpuq2nP9WQv4lh/xLsWKSsNuTJsoKYuZpGrFwtICaPGTua0Gnd7agsa8FLaRddqSp50hxC4y2uyCPB382e9Ej1TdaaX2k9pk+WkDNwT6VZQk12KDaj9sE3j1Ic2KNhKb7LSLmVwuImX4z+xvloVLELayWCZMVc7v5i83RpjO4KlstXmweXnE+MCvQrKEsIGaWL2ZMEHveZdNX0p+ykZGRkZGRkQvj092Ziy18sfjT9Fe73+MnrWy3FoA6azlafNrcaJljgjAnYXeZXpsTovOODr6JqqXVHnXLNbO72eOnDQ1uMeNZQMzvNiOWGs31mtstEj0gYTNilrAJ6/cqpi4ytBvsu8OO7gYnym6vLVBWsDvngIFukNEDEgZ6QNL43aDv7Ab5d73yu0H6nBbKDHnXsq+YIqz8MUmYAYb3gKHRNGoe/omjqdUcYeJNluudn220/PwlqJowWzaLSF/oG600mqmuJJA1U69sWmCnpjFTnRbbTN36LaxWEAuvzS9Sqr0/u8jCkab4y+5fTP20pI+mHWKZa+4gW332DUxfbiMjIyMjIyMXxqTHw940w8Tf2f3xmD9pDl5DilSx8BeWkf5xRsy2me60x29zyMrmVLVQtYzYvJmGn41Uv6nNRM30wdpX8Pl+s70WEXN1y6slxPKp1shI5zAzVmUujaYIm4jOr3NVpmzujGhjrLSlOqP+ldLQDGP1NKsbDP+2G7wzzp/jroiHBnvAitHd4Ez2gNAKafTz9NzvQdOvbfoba1kpzX89jsDI19QZsdxr+WwJnBbc8mYGsYCsbNZVW9pswkz9nTnQvdWvkUzdpvzHQrP1X/ssiKmnPRCzf0znRVknDsHN9FiENn+xgtkMzb8y32hFjIyMjIyM0OH3SMo6DQx2RgravcfEdTYr0EuVWYEeye8Gr4dog/2QQSwgnVHgdEbMayn8upfRLc2IWcSWzTRqsB+qmiZ7JENM0vtkj+QOxpjWlxFLQszkxD1+j6S4PdJudGcEjT+FT3Cm8H26Ryr/VY/kOFP4WN3gO3skz+iRzJU9Ev+5S/VIjG5JcHqk67slspvnWzqb634/De2T9Pjd0nRZt4T/rM0RnVHnz9qmVOmRNGmwH7KvzdZ6pGTVvHdBu8UvltvMcM0jfVOBdi+wM7obYMt9TOEbGRkZGRkZGakmmPCPTDeZYZnY4uD0OpGg6dxolmuPk4XXZuAEPxsQ0+eqcEbWt2TE0m5Bdpqr241hEbNTqwFmIeGmd3OIxW6T3VYQMzUzJ/NI8xGRDtghlt9ojPlWdjV1MHzi3kLMMSMMdMWSsOtnlsEWbTp3g998Ct+NsPYpfJa1ppg/he+d9w0WoYh14o5aE05P5psoK9wZkriF11P4DDldj7YZMUsaf+Legpg62QR6Utx03VLNAjJrwfRbrE3cK4j5s4W9E+2e1et7ze4Wsfm9veZajZjJrM62INP6FLSAmEGsKDitz7/ZdPEeXGgXX4D5vzeDm/mAjbp3ZGRkZGTk0pjoiv5GJlDjJ1g4Dc9gtjwNXOXhligrT3Mnk9DibrwUcIWP220zAe2xm7vCMmq8aNU9cW9GLL3rk5zfLQpOztP1GDZ9YjcOTugpfIzdODg7dNzQ1oSRb7tDB2bxWxzpflTvnMLHiT39j9AiNXGvf4cOaM3NNifx0h068El6qdFmqgfkBfnJ0sQ2elqflv121RtqbrTUP5kvtJqEVnbjZkoK7pSRf5nFrCBm/s5kr/ETzAQtYCa+jY2MjIyMjIz8o8S7TTfECsNMgzloGrEAjPdpRukPW3qaRWxGLGvBjJNrQpsp3W2p0fJmAjNetNyiEHvUdt4wiPlrLCOWPtMNzkdjrMoMu/VP3GNFXbvSVjCm8Gl69TQj/+MOHX+Xb7FDR9ztQ92gZ1hp3KHDEEbsxsGIQXbe8IQR0/XeZVbwMiNPA7uZb7Sy2ULsvAGtfQU0L1OGz/dpRsw+SR1ML5h17rxREDOIBcGOt0qqFBDTF5qUymEmaFtW4+QHdW+CRelCpzcAAAAASUVORK5CYII=" alt=""
+      <img src="./images/feature-section1-dottedrows.png" alt=""
       class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
 
       <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center">An Experience
@@ -1234,14 +1234,14 @@
     <!-- main content -->
     <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
       <!--left image -->
-      <img src="/assets/testimonial-5d1d25a1.jpg" alt=""
+      <img src="./images/testimonial.jpg" alt=""
       height="320px"
       width="320px"
       class="rounded-xl">
 
       <!-- riught part-->
       <div class="max-w-[400px] flex flex-col">
-        <img src="/assets/quotes-38b97044.svg" alt=""
+        <img src="./images/quotes.svg" alt=""
         width="35px"
         height="40px"
         class="-mb-2 xl:order-1">
@@ -1250,7 +1250,7 @@
         <a href="#" class="text-grayText italic underline xl:order-1">Learn More</a>
         <p class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Lorem Ipsum</p>
         <p class="font-mullish font-medium xl:order-1">CEO, XYZ Engineering Company</p>
-        <img src="/assets/fake-company-logo-6fa447e4.png" alt="" width="80px" height="40px" class=" xl:order-1">
+        <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px" class=" xl:order-1">
       </div>
     </div>
 
@@ -1331,7 +1331,7 @@
       </div>
 
       <!--right side wali image-->
-      <img src="/assets/ctaImg-e340b144.svg" alt="" width="240px" height="282px" 
+      <img src="./images/ctaImg.svg" alt="" width="240px" height="282px" 
       class="mt-16 pt-3 hidden lg:block">
 
     </div>
@@ -1350,7 +1350,7 @@
       <!-- column - 1 -->
       <div class="flex flex-col md:max-w-[340px] lg:max-w-[260px]">
         <img
-          src="/assets/logo-dark-e6c30c29.svg"
+          src="/images/logo-dark.svg"
           loading="lazy"
           width="120px"
           height="24px"
@@ -1408,14 +1408,14 @@
         </form>
         <div class="flex items-start space-x-4">
           <img
-            src="/assets/footer-certificate-1-21d2bad2.png"
+            src="/images/footer-certificate-1.png"
             loading="lazy"
             width="92"
             height="40"
             class="cursor-pointer"
           />
           <img
-            src="/assets/footer-certificate-2-4d9e1626.jpg"
+            src="/images/footer-certificate-2.jpg"
             loading="lazy"
             width="122"
             height="80"
@@ -1944,7 +1944,7 @@
               <li class="cursor-pointer">
                 <a>
                   <img
-                    src="/assets/facebook-icon-2b65a866.svg"
+                    src="/images/facebook-icon.svg"
                     width="24"
                     height="24"
                     loading="lazy"
@@ -1954,7 +1954,7 @@
               <li class="cursor-pointer">
                 <a>
                   <img
-                    src="/assets/twitter-icon-82cbd3e5.svg"
+                    src="/images/twitter-icon.svg"
                     width="24"
                     height="24"
                     loading="lazy"
@@ -1964,7 +1964,7 @@
               <li class="cursor-pointer">
                 <a>
                   <img
-                    src="/assets/instagram-icon-6c2b0c16.svg"
+                    src="/images/instagram-icon.svg"
                     width="24"
                     height="24"
                     loading="lazy"
@@ -1974,7 +1974,7 @@
               <li class="cursor-pointer">
                 <a>
                   <img
-                    src="/assets/github-icon-e2d5f6a2.svg"
+                    src="/images/github-icon.svg"
                     width="24"
                     height="24"
                     loading="lazy"
@@ -1984,7 +1984,7 @@
               <li class="cursor-pointer">
                 <a>
                   <img
-                    src="/assets/linkedin-icon-5471e826.svg"
+                    src="/images/linkedin-icon.svg"
                     width="24"
                     height="24"
                     loading="lazy"
