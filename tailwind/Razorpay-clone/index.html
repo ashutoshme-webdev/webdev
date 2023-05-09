@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config={
+        theme: {
+    extend: {
+      fontFamily: {
+        mullish: ["Mulish", "sans-serif"],
+      },
+      colors: {
+        deepBlue: "#02042a",
+        lightBlue: "#2b84ea",
+        lightBlue300: "#4b94ed",
+        lightBlue500: "#0b72e7",
+        greenLight: "#61cea6",
+        grayText: "#818597",
+        lightGray: "#e2e2e2",
+        grayBlue: "#344a6c",
+        deepBlueHead: "#162f56",
+        gray2: "#525a76",
+      },},
+  }
+      }
+    </script>
     <title>Razorpay</title>
 
         <!-- google font -->
@@ -56,6 +78,8 @@
         }
 
     </style>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
 
 </head>
 <body>
@@ -969,9 +993,9 @@
               </div>
               <!--card 1-->
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="p-10 bg-[url(./images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
-              hover:bg-[url(/images/instant-settlement-bghover.svg)]
+              hover:bg-[url(./images/instant-settlement-bghover.svg)]
               bg-white" >
                   <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
@@ -992,9 +1016,9 @@
               </div>
               <!--card 2-->
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="p-10 bg-[url(./images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
-              hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
+              hover:bg-[url(./images/instant-settlement-bghover.svg)] bg-white" >
                   <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
@@ -1014,9 +1038,9 @@
               </div>
               <!--card 3-->
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="p-10 bg-[url(./images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
-              hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
+              hover:bg-[url(./images/instant-settlement-bghover.svg)] bg-white" >
                   <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
@@ -1036,9 +1060,9 @@
               </div>
               <!--card 4-->
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="p-10 bg-[url(./images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
-              hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
+              hover:bg-[url(./images/instant-settlement-bghover.svg)] bg-white" >
                   <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
@@ -1058,9 +1082,9 @@
               </div>
               <!--card 5-->
               <div
-              class="p-10 bg-[url(/images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
+              class="p-10 bg-[url(./images/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer
               bg-no-repeat hover:scale-105 transition-all duration-200
-              hover:bg-[url(/images/instant-settlement-bghover.svg)] bg-white" >
+              hover:bg-[url(./images/instant-settlement-bghover.svg)] bg-white" >
                   <img src="./images/razorpayXicon.svg" alt=""
                   class="w-10 h-10">
                   <h3 class="font-mullish text-lg font-bold pt-4">Corporate Cards</h3>
@@ -1083,7 +1107,7 @@
   </section>
 
   <!--core features-->
-  <section class="w-full bg-[url(/images/core-features-sectionBg.svg)] 
+  <section class="w-full bg-[url(./images/core-features-sectionBg.svg)] 
   bg-no-repeat bg-cover bg-center mt-14 relative corefeaturesection">
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <h2 class="font-mullish font-bold text-2xl text-center text-white">Features</h2>
@@ -1170,7 +1194,12 @@
         <p class="font-mullish opacity-80">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
         <p class="font-mullish mt-6 opacity-80">Focus on your business while we handle the complexities of payments for you.
         </p>
+        <button
+                  class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md 
+                  font-mullish font-bold hover:bg-lightBlue500 translate-all duration-200 mt-6"
+                  >Get Started</button>
       </div>
+
 
       <!--right part-->
       <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
@@ -1275,7 +1304,7 @@
   </section>
 
   <!--CTA-->
-  <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]">
+  <section class="bg-[url(./images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]">
     <!--main content box-->
     <div class="w-11/12 max-w-[1080px] relative flex flex-row items-center mx-auto justify-between space-x-20 pt-16">
 
@@ -1350,7 +1379,7 @@
       <!-- column - 1 -->
       <div class="flex flex-col md:max-w-[340px] lg:max-w-[260px]">
         <img
-          src="/images/logo-dark.svg"
+          src="./images/logo-dark.svg"
           loading="lazy"
           width="120px"
           height="24px"
@@ -1408,14 +1437,14 @@
         </form>
         <div class="flex items-start space-x-4">
           <img
-            src="/images/footer-certificate-1.png"
+            src="./images/footer-certificate-1.png"
             loading="lazy"
             width="92"
             height="40"
             class="cursor-pointer"
           />
           <img
-            src="/images/footer-certificate-2.jpg"
+            src="./images/footer-certificate-2.jpg"
             loading="lazy"
             width="122"
             height="80"
