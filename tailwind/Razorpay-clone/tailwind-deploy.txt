@@ -1,0 +1,56 @@
+For deploying Tailwind projects on github pages, we can directly use
+Tailwind play cdn from tailwind official website without any installation.
+
+just add  =>
+ <script src="https://cdn.tailwindcss.com"></script> 
+ inside the <head> in index.html, this will allow us to run every non-custom tailwind css property
+//for reference, check tailwind/Razorpay-clone project
+
+Also for applying custom tailwind styles, we have to define it inside the <head> in index.html
+
+like =>
+
+<script>
+      tailwind.config={
+        theme: {
+    extend: {
+      fontFamily: {
+        mullish: ["Mulish", "sans-serif"],
+      },
+      colors: {
+        deepBlue: "#02042a",
+        lightBlue: "#2b84ea",
+        lightBlue300: "#4b94ed",
+        lightBlue500: "#0b72e7",
+        greenLight: "#61cea6",
+        grayText: "#818597",
+        lightGray: "#e2e2e2",
+        grayBlue: "#344a6c",
+        deepBlueHead: "#162f56",
+        gray2: "#525a76",
+      },},
+  }
+      }
+    </script>
+
+    which can/may be present in the tailwind.config.js file
+    This information is also available in tailwind official website
+
+For deploying in netlify/vercel
+first, you need to add "build": "build vite" inside scripts inside the package.json file
+like =>
+
+ "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  }
+
+  After that, run the following command in the terminal =>
+  npm run build 
+
+  This will make our code deployable or production level
+  Also this will make a new directory "dist" inside our main directory
+  We have to upload this new directory "dist" in netlify/vercel for deploying our code
+  Not sure but I think npm run build makes new css file which contains every css property
+  we have used in our code. Every file other than index.html is present inside assets folder inside dist folder
+
