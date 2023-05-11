@@ -116,4 +116,9 @@ Day 18 - 10/05/23
 
 Day 19 - 11/05/23
 =>Learned Topics - Started JavaScript, <script> tag, console.log, alert, comments, variables,
-                   var, let, const, 
+                   var, let, const, scope, primitive data type, non-primitive data type, string,
+                   number, boolean, undefined, null, object, array, operator, arithmatic operator,
+                   assignment operator, comparison operator, bitwise operator, logical operator,
+                   increment, decrement, strict equality operator, loose equality operator, falsy values, 
+                   truthy values, logical operator with non-booleans, operator precedence, ternary operator,
+                   short circuiting of Logical OR operator, control statements, if-else statements, switch case
