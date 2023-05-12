@@ -122,3 +122,14 @@ Day 19 - 11/05/23
                    increment, decrement, strict equality operator, loose equality operator, falsy values, 
                    truthy values, logical operator with non-booleans, operator precedence, ternary operator,
                    short circuiting of Logical OR operator, control statements, if-else statements, switch case
+
+Day 20 - 12/05/23
+=>Learned Topics - continued JavaScript, for loop, while loop, do while loop, object creation,
+                   dot notation, bracket notation, adding new properties/methods to an object,
+                   function, factory function, constructor function, adding/deleting properties,
+                   adding/deleting methods, input parameters, pascal notation, this keyword,
+                   new keyword, constructor property, primitive data type, reference data type,
+                   pass by value, pass by reference, for-in loop, for-of loop, iterables, 
+                   using for-of loop on object, Object.keys, Object.entries, object cloning,
+                   iteration cloning, assign cloning, spread cloning, Object.assign, spread operator,
+                   JavaScript garbage collection, checking property in an object
