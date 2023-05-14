@@ -309,3 +309,373 @@ console.log("Learning javascript");
 
 // src.a++;
 // console.log(dest);
+
+// let a=Math.random();
+// a=Math.abs(-3);
+// a=Math.cbrt(64);
+// a=Math.sqrt(25);
+// a=Math.ceil(-4.5);
+// a=Math.floor(9.3);
+// a=Math.min(5,1);
+// a=Math.max(5,2);
+// a=Math.pow(2,10);
+// a=Math.round(4.5);
+// console.log(a);
+
+// let lastName = 'Babbar' ;
+
+
+// let firstName = new String('Love');
+
+// let message = 
+// `Hello ${lastName},
+
+// Thanks for the Opportunity
+
+// Regards,
+// Babbar`;
+
+// console.log(message);
+
+// let words = message.split(' ');
+
+// console.log(words);
+
+// let date = new Date();
+
+
+// let date2 = new Date('June 20 1998 07:15');
+
+// let date3 = new Date(1998, 5, 20, 7);
+
+
+// date3.setFullYear(1947);
+
+// console.log(date3);
+
+// let numbers = [1,4,5,7];
+
+// console.log(numbers);
+
+// //end -> push
+// //beginning -> unshift
+
+// //middle -> splice
+
+// //Searching
+// console.log(numbers);
+
+// console.log(numbers.indexOf(9));
+
+// //we want to check if a number exist in an array
+// if(numbers.indexOf(4) != -1) 
+//     console.log("present");
+
+// console.log(numbers.includes(7));
+
+// console.log(numbers.indexOf(4, 2) );
+
+
+// let courses = [
+//     {no:1, naam:'Love'},
+//     {no:2, naam:'Rahul'}
+// ];
+
+//console.log(courses);
+
+//console.log( courses.includes( {no:1, naam:'Love'} ) );
+
+// let course =  courses.find(course => course.naam === 'Kilvish');  //callback function
+
+// function(course) {
+//     return course.naam === 'Love';
+// }
+
+// console.log(course);
+
+// let numbers = [1,2,3,4,5,6,7];
+
+// //end
+// numbers.pop();
+// //beginning
+// numbers.shift();
+// //middle
+// numbers.splice(2, 1);
+
+// // console.log(numbers);
+
+// let numbers = [1,2,3,4,5];
+// let numbers2 = numbers;
+
+// //numbers = [];
+// //numbers.length = 0;
+// numbers.splice(0,numbers.length);
+
+// console.log(numbers);
+// console.log(numbers2);
+
+// let first = [1,2,3];
+// let second = [4,5,6];
+
+// let combined = first.concat(second);
+// console.log(combined);
+
+// let marks = [10,20,30,40,50,60,70,80];
+// let sliced = marks.slice();
+// //let sliced = marks.slice(2);
+// // let sliced = marks.slice(2,6);
+// console.log(sliced);
+
+// let ar1=[{len: 5, bre: 10}, {len:3, bre:6}];
+// let ar2=[{rad:50, area:100}, {rad:25, area:75}];
+// let combined=ar1.map(function(de,i,item){
+//     return Object.assign({},de,ar2[i],item);
+// });
+// console.log(combined);
+
+
+// let first = [1,2,3];
+// let second = [4,5,6];
+
+// let combined = [...first,'a', false, ...second ,'b', true];
+// console.log(combined);
+
+// //copy kaise create karu
+// let another = [...combined];
+
+// let arr = [10,20,30,40,50];
+
+// // for(let value of arr) {
+// //     console.log(value);
+// // }
+
+// arr.forEach(number=> console.log(number));
+
+
+
+// let numbers = [10,20,30,40,50];
+// const joined = numbers.join(',');
+
+// console.log(joined);
+
+// let message = 'This is my first message';
+// let parts = message.split(' ');
+
+// console.log(parts);
+
+// let joined = parts.join('_');
+// console.log(joined);
+
+
+// let numbers = [5,10,4,40];
+
+// numbers.sort();
+
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+
+
+// let numbers = [1,2,-1,-4];
+
+// let filtered =  numbers.filter(value => value >= 0);
+
+// console.log(filtered);
+
+
+// let numbers = [7,8,9,10];
+// console.log(numbers);
+
+// let items = numbers.map(value => 'student_no' + value);
+
+// console.log(items);
+
+// let numbers = [1,2,-6,-9];
+
+// let items = numbers
+//             .filter(value => value >= 0)
+//             .map(num => {value: num});
+
+// console.log(items);
+
+
+
+// //function call or invoke
+// run();
+
+
+// //function declaration   // hoisting works only on function declaration
+// function run() {
+//     console.log('running');
+// }
+
+
+
+
+// //Named function assignment
+// let stand = function walk() {
+//     console.log('walking');
+// };
+
+// //Anonymous function assignment
+// let stand2 = function() {
+//     console.log('walking');
+// };
+
+// stand();
+
+// let jump = stand;
+
+// jump();
+
+// stand2();
+// console.log(c);
+// let a=2;
+// let b=3;
+// var c;
+// c=a+b;
+
+// let x = 1;
+// x = 'a';
+
+// console.log(x);
+
+
+// function sum() {
+//     let total = 0;
+//     for(let value of arguments) 
+//         total = total + value;
+//     return total;
+// }
+
+// // console.log(sum(1,2));
+// //console.log(sum(1));
+// // console.log(sum());
+// //console.log(sum(1,2,,3,4,5));
+
+// let ans = sum(1,2,2,3);
+// console.log(ans);
+
+//Rest Operator
+
+// function sum(num, value, ...args) {
+//     console.log(args);
+// }
+
+// sum(1,2,3,4,5,6);
+
+
+//Default Parameters
+// function interest(p,r=6,y=9) {
+//     return p*r*y/100;
+// }
+
+//GETTER SETTER
+
+//getter -> access properties
+//setter -> change or mutate properties
+
+//console.log(interest(1000,undefined, 8));
+
+let person = {
+    fName : 'Love',
+    lName : 'Babbar',
+    get fullName() {
+        return `${person.fName} ${person.lName}`;
+    },
+    set fullName(value) {
+        if(typeof value !== String) {
+            throw new Error("You have not sent a string");
+        }
+        let parts = value.split(' ');
+        this.fName = parts[0];
+        this.lName = parts[1];
+        
+    }
+};
+
+
+
+ console.log(person);
+
+ 
+
+
+//issue - > read only
+
+
+// console.log(person.fullName);
+// try {
+//     person.fullName = true;
+// }
+// catch (e) {
+//     alert(e);
+// }
+
+
+// console.log(person.fullName);
+
+
+// {
+//     var a = 5;
+// }
+// console.log(a);
+
+// function walk() {
+//     var a = 5;
+// }
+
+// console.log(a);
+
+// for(var i = 0; i<10; i++) {
+
+// }
+
+// console.log(i);
+
+// if(true) {
+//     var a = 5;
+// }
+
+// console.log(a);
+
+// function a() {
+//     const ab  = 5;
+// }
+// const ab = 5;
+// function b() {
+//     const ab = 5;
+// }
+
+//sorting 
+// let a = [10,5,4,25];
+
+// a.sort(function(a,b) {
+//     return a-b;
+// });
+
+// console.log(a);
+
+// let arr = [-1,-2,-3,-4];
+// let total = 0;
+
+// for(let value of arr) 
+//     total = total + value;
+
+// console.log(total);
+
+
+// let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+// console.log("PRINTING TOTAL SUM:")
+// console.log(totalSum);
+
+
+
+//repeat callback function properly , combining/slicing array of objects javascript basic lec 3 page - 11/16
+//argument object , why for of used in it, 
+
+
+
+

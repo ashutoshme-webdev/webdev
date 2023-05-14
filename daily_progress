@@ -138,3 +138,19 @@ Day 20 - 12/05/23
 Day 21 - 13/05/23
 =>Learned Topics - Revision and practice of all the Javascript topics covered till now.
                    Solving quiz questions on w3schools.
+
+Day 22 - 14/05/23
+=>Learned Topics - continued JavaScript, Math functions, math.random, math.abs, math.cbrt, math.ceil,
+                   math.floor, math.pow, math.round, String, string constructor, string methods,
+                   length, includes, starts/ends with, indexOf, trim, replace, split, substring,
+                   escape sequence, template literals, placeholder, Date and Time object, arrays,
+                   Insertion, Deletion, Searching, splice, push/pop, shift/unshift, callback function,
+                   arrow function, emptying array, combining array, slicing array, find function,
+                   map function, spread operator, for-Each loop, Joining in array, sorting array,
+                   sorting of arrays with comparison function, mapping arrays, mapping objects,
+                   filtering of arrays, chaining concept of callback functions, reducing of array,
+                   continued JavaScript, functions, function invoke, hoisting, function declaration,
+                   function assignment, named function assignment, anonymous function assignment,
+                   the arguments object, rest parameters, default parameters, getter/setter method,
+                   error handling, try, catch, throw, javascript scope, block scope, function scope,
+                   global scope, solving quiz questions on w3schools.
