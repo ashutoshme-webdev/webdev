@@ -154,3 +154,12 @@ Day 22 - 14/05/23
                    the arguments object, rest parameters, default parameters, getter/setter method,
                    error handling, try, catch, throw, javascript scope, block scope, function scope,
                    global scope, solving quiz questions on w3schools.
+
+Day 23 - 15/05/23
+=>Learned Topics - started Javascript Document Object Model(DOM), window, DOM, BOM, document object,
+                   Rendering of DOM Object, tokens, tokenizer, nodes, DOM methods, getElementById,
+                   getElementByClassName, getElementByTagName, $0, querySelector, querySelectorAll,
+                   .innerHTML, .outerHTML, .innerText, .textContent, .createElement, .createTextNode, 
+                   appendChild, insertAdjacentHTML, removeChild, .parent, making changes in css using js,
+                   .style, .cssText, .setAttribute, .className, .classList, .classList features, add,
+                   remove, toggle, contains

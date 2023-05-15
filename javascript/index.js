@@ -428,8 +428,8 @@ console.log("Learning javascript");
 
 // let ar1=[{len: 5, bre: 10}, {len:3, bre:6}];
 // let ar2=[{rad:50, area:100}, {rad:25, area:75}];
-// let combined=ar1.map(function(de,i,item){
-//     return Object.assign({},de,ar2[i],item);
+// let combined=ar1.map(function(item,i){
+//     return Object.assign({},item,ar2[i]);
 // });
 // console.log(combined);
 
@@ -578,26 +578,26 @@ console.log("Learning javascript");
 
 //console.log(interest(1000,undefined, 8));
 
-let person = {
-    fName : 'Love',
-    lName : 'Babbar',
-    get fullName() {
-        return `${person.fName} ${person.lName}`;
-    },
-    set fullName(value) {
-        if(typeof value !== String) {
-            throw new Error("You have not sent a string");
-        }
-        let parts = value.split(' ');
-        this.fName = parts[0];
-        this.lName = parts[1];
+// let person = {
+//     fName : 'Love',
+//     lName : 'Babbar',
+//     get fullName() {
+//         return `${person.fName} ${person.lName}`;
+//     },
+//     set fullName(value) {
+//         if(typeof value !== String) {
+//             throw new Error("You have not sent a string");
+//         }
+//         let parts = value.split(' ');
+//         this.fName = parts[0];
+//         this.lName = parts[1];
         
-    }
-};
+//     }
+// };
 
 
 
- console.log(person);
+//  console.log(person);
 
  
 
@@ -666,15 +666,17 @@ let person = {
 // console.log(total);
 
 
-// let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+// let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue,0);
 
 // console.log("PRINTING TOTAL SUM:")
 // console.log(totalSum);
 
 
 
+
+
 //repeat callback function properly , combining/slicing array of objects javascript basic lec 3 page - 11/16
-//argument object , why for of used in it, 
+//argument object , why for of used in it, sort function with compare 
 
 
 
