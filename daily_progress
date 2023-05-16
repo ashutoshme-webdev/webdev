@@ -163,3 +163,10 @@ Day 23 - 15/05/23
                    appendChild, insertAdjacentHTML, removeChild, .parent, making changes in css using js,
                    .style, .cssText, .setAttribute, .className, .classList, .classList features, add,
                    remove, toggle, contains
+
+Day 24 - 16/05/23
+=>Learned Topics - continued JavaScript Document Object Model(DOM), browser events, monitor events,
+                   unmonitor events, event target, addEventListener, removeEventListener, dispatchEvent,
+                   node, event target, event type, event function, phases of an event, capturing phase,
+                   at target phase, bubbling phase, the event object, default action, .preventDefault,
+                   the target property, nodeName
