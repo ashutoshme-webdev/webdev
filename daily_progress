@@ -170,3 +170,9 @@ Day 24 - 16/05/23
                    node, event target, event type, event function, phases of an event, capturing phase,
                    at target phase, bubbling phase, the event object, default action, .preventDefault,
                    the target property, nodeName
+
+Day 25 - 17/05/23
+=>Learned Topics - continued JavaScript Document Object Model(DOM), performance of code, performance.now(),
+                   reflow, repaint, Document Fragment, the Call Stack, synchronous execution of code,
+                   event loop, mechanism of event loop, callback queue, setTimeout, iphone product page,
+                   LinkedIn post for iphone product page
