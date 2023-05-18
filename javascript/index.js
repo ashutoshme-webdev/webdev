@@ -672,6 +672,24 @@ console.log("Learning javascript");
 // console.log(totalSum);
 
 
+let p1=new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('first');
+        
+    }, 0);
+});
+let t1=performance.now();
+console.log(t1)
+let p2=new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('second');
+        
+    }, 0);
+});
+let t2=performance.now();
+console.log(t2)
+console.log('cns');
+
 
 
 
