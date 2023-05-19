@@ -672,25 +672,44 @@ console.log("Learning javascript");
 // console.log(totalSum);
 
 
+// let p1=new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('first');
+        
+//     }, 0);
+// });
+// let t1=performance.now();
+// console.log(t1)
+// let p2=new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('second');
+        
+//     }, 0);
+// });
+// let t2=performance.now();
+// console.log(t2)
+// console.log('cns');
+
+
 let p1=new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log('first');
         
-    }, 0);
+    }, 1);
+    resolve(true);
 });
-let t1=performance.now();
-console.log(t1)
-let p2=new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('second');
-        
-    }, 0);
+let output=p1.then(() => {
+    let p2=new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            console.log('second');
+        }, 10);
+        resolve("sent response");
+    })
+    return p2;
 });
-let t2=performance.now();
-console.log(t2)
-console.log('cns');
-
-
+output.then((val) => {
+    console.log(val);
+});
 
 
 //repeat callback function properly , combining/slicing array of objects javascript basic lec 3 page - 11/16
