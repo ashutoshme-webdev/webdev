@@ -691,29 +691,35 @@ console.log("Learning javascript");
 // console.log('cns');
 
 
-let p1=new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('first');
+// let p1=new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('first');
         
-    }, 1);
-    resolve(true);
-});
-let output=p1.then(() => {
-    let p2=new Promise((resolve, reject)=>{
-        setTimeout(() => {
-            console.log('second');
-        }, 10);
-        resolve("sent response");
-    })
-    return p2;
-});
-output.then((val) => {
-    console.log(val);
-});
+//     }, 1);
+//     resolve(true);
+// });
+// let output=p1.then(() => {
+//     let p2=new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             console.log('second');
+//         }, 10);
+//         resolve("sent response");
+//     })
+//     return p2;
+// });
+// output.then((val) => {
+//     console.log(val);
+// });
+ async function util(){
+ let a = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+ console.log(a.text());
+}
+util();
 
 
 //repeat callback function properly , combining/slicing array of objects javascript basic lec 3 page - 11/16
-//argument object , why for of used in it, sort function with compare 
+//argument object , why for of used in it, sort function with compare, promise, fetch api, async/await, json
 
 
 

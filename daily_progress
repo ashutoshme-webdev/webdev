@@ -187,3 +187,10 @@ Day 27 - 19/05/23
                    API methods, Promise, states of Promise, creating a new Promise,
                    resolve/reject in promise, parallel execution of promise, then method,
                    the catch method, parallel execution of promise inside the then method
+
+
+Day 28 - 20/05/23
+=>Learned Topics - continued JavaScript Document Object Model(DOM), Async/Await keyword, 
+                   fetch api, retrieving data through fetch api, Javascript Object Notation,
+                   send data through fetch api, closures, made counter app with javascript 
+                   using both onclick and event listener.
