@@ -59,6 +59,7 @@
 //IIFE - Immediately Invoked Function Expression - is a function that runs as soon as it is defined
 
 //closure - A closure is the ability of a function that allows it to access variables and functions out of its scope.
+           //closures are created every time a function is created. closures are functions which can access outside.
 
 //hoisting in function - functions are hoisted differently from variables, functions are hoisted completely
 
@@ -83,7 +84,36 @@
                                    //3. this keyword works in normal function, whereas in arrow function, it refers to global object
             
 
-//
+//lexical scope - the scope where the variable defined outside the scope is accessible inside the scope
+//module pattern - The module pattern is a design pattern used for improving the maintainability and reusability 
+                 //of the code by creating public and private access levels.
+                 //The module pattern is quite similar to an IIFE (immediately invoked functional expression), 
+                 //but a module always returns an object instead of a function.
+                 //The module pattern keeps the privacy of the state and organizes using closures. 
+                 //It protects the pieces from the global scope, avoiding possible errors and conflicts.
+
+//closure vs scope - whenever we create a function within another function, then the inner function is the closure
+                   //whereas a scope defines what variable we have access to
+                   //closures are generally returned so that private variables can be accessed through the closure
+
+//currying - technique that transforms a function having multiple arguments into a sequence of functions with a single argument
+            //They are constructed by chaining closures by immediately returning their inner functions simultaneously. 
+
+//use of currying - It helps us to create a higher-order function
+                  //It reduces the chances of error in our function by dividing it into multiple smaller functions that handle one task.
+                 // It is very useful in building modular and reusable code
+                 // It helps us to avoid passing the same variable multiple times
+                 // It makes the code more readable
+
+//partial application - technique that transforms a function into another function with smaller arity.
+                       //it does so by binding values to one or more arguments
+//arity - the number of arguments a function receives
+
+
+
+
+
+
 
 
 
@@ -133,4 +163,182 @@
 //Remember, console.log(i) will be executed last, with let remembering each value in scope and var getting updated after each loop/scope
                                
                                
+
+//closure practice
+
+// function outer() {
+//     let a = 5;
+//     console.log(a);
+//     function inner1() {
+//         let b = 7;
+//         console.log(b);
+
+//         function inner2() {
+//             let c = 9;
+//             console.log(c);
+
+//             function inner3() {
+//                 let d = 11;
+//                 console.log(d);
+
+//             }
+//             return inner3
+//         }
+//          return inner2
+//     }
+//     return inner1
+// }
+
+// let comp = outer();
+// let ans=comp();
+// ans();
+
+// var addSix=createBase(6);
+// console.log(addSix(5));
+// console.log(addSix(9));
+
+
+// function createBase(num){
+//     return function(d){
+//       return d+num;
+
+//     }
+
+// }
+
+
+//currying practice
+
+// /*f(a,b) implementation */
+// function f(a,b) {
+//     return "Works"
+// }
+
+// /*f(a)(b) implementation */
+// function f(a) {
+//     return (b) => {
+//          "Works"
+//     }
+// }
+// console.log(f(1)(2)) // works
+// console.log(f(1)); /* (b) => {return "Works" } */
+
+// /*Simple function*/ 
+// const add = (a, b, c)=>{
+//     return a+ b + c
+// }
+// console.log(add(1,2 ,3)); // 6
+
+// /* Curried Function */
+// const addCurry = (a) => { // takes one argument
+//     return (b)=>{                 //takes second argument
+//         return (c)=>{             //takes third argument
+//             return a+b+c
+//         }
+//     }
+// }
+// console.log(addCurry(1)(2)(3)); //6
+
+// function sum(a) {
+//     return (b) => {
+//         return (c) => {
+//             return a + b + c
+//         }
+//     }
+// }
+// /* you can call it in two ways*/
+// console.log(sum(1)(2)(3)); //6
+
+// const sum1 = sum(1);
+// const sum2 = sum1(2);
+// const result = sum2(3);
+// console.log(result); // 6
+
+// function sum(operation) {
+//     return (a) => {
+//         return (b) => {
+//         if(operation === "sum")
+//                   return a + b;
+//                     else if(operation === "multiply")
+//                     return a * b;
+//                     else if(operation === "divide")
+//                     return a / b;
+//                     else if(operation === "subtract")
+//                     return a - b;
+//                     else return "No / Invalid Operation Selected"
+//         }
+//     }
+// }
+// const mul = sum("multiply");
+// console.log(mul(3)(5));  //15 this can be reused again and again
+// console.log(mul(5)(9));  //45 
+
+//infinite currying
+//recursive solution
+//  function sum(a) {
+//     return function(b) {
+//         if (b) {
+//             return sum(a + b);
+//         } else {
+//             return a;
+//         }
+//     }
+// }
+// console.log(sum(3)(5)(6)());  the last () tells that no argument is passed which stops the function 
+                                //otherwise it will return the code of whole function
+
+
+//updating DOM using currying
+
+// {/* <div>
+//   <h1 id="header">Hello Piyush</h1>
+// </div> */}
+
+// const updateElemText = id => content => document.querySelector(`#${id}`).textContent= content;
+// function updateElemText(id) {
+//     return function (content) {
+//         document.querySelector("#"+id).textContent=content;
+// };
+// }
+// const updateHeaderText = updateElemText('header');
+// updateHeaderText('Hello RoadsideCoder!');
+
+//curry implementation - convert f(a,b,c) into a curried function f(a)(b)(c)
+// function curry(func){
+//     return function curriedFunc(...args){
+//         //console.log(args.length, func.length);
+//         if(args.length>=func.length){
+//             return func(...args);
+//         }
+//         else{
+//             return function (...next){
+//                 return curriedFunc (...args, ...next);
+//             };
+//         }
+
+//     };
+
+// }
+// const sum = (a, b, c, d) => a + b + c + d;
+// const totalSum = curry(sum);
+// console.log(totalSum(1)(2)(3)(4));
+
+
+
+
+//partial application practice
+
+// function sum(a) {
+//     return (b, c) => {
+//         return a * b * c
+//     }
+// }
+// let x = sum(10);
+// x(1,2);
+// x(20,30);
+// sum(10)(1,2);
+// sum(10)(20,30);  takes two arguments whereas in currying, it would have taken three arguments
+//in partial application, it expected 3 arguments, where two arguments were sent as one (1,2), (20,30), and had 2 nested function
+//in currying, it expected 3 arguments, and had 3 nested function
+
 
