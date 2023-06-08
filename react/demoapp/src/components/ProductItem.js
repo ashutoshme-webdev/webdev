@@ -10,8 +10,7 @@ const ProductItem = (props) => {
 
 
   function clickHandler() {
-    //title = "Popcorn";
-    setTitle("Popcorn");
+    setTitle("item "+props.id);
     console.log("button clicked");
   }
   

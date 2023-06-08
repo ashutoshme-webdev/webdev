@@ -13,7 +13,7 @@ const App = () => {
     },
     { 
       id: 'p2', 
-      title: 'Sirf Excel', 
+      title: 'Surf Excel', 
       amount: 200, 
       date: new Date(2021, 2, 2) },
     {
