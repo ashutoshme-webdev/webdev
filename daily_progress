@@ -228,3 +228,57 @@ Day 35 - 27/05/23
 Day 36 - 28/05/23
 =>Learned Topics - continued revision and practice of concepts covered till now.
                    continued js exercises on thecodehelp.com
+
+Day 37 - 29/05/23
+=>Learned Topics - continued revision and practice of concepts covered till now.
+                   continued js exercises on thecodehelp.com
+
+Day 38 - 30/05/23
+=>Learned Topics - created a password generator in javascript which generates the
+                   password based on the user input by letting the user choose the
+                   password length, whether the password should contain numbers and
+                   symbols and also showing the strength of the password and giving 
+                   the user the ability to copy the password to clipboard
+
+Day 39 - 31/05/23
+=>Learned Topics - created a weather status app in javascript which can either take
+                   the current location of the user using html geolocation api or by
+                   taking a location from the user as input and showing the status of
+                   the weather including temperature, wind speed and humidity for that 
+                   particular location by fetching data from a weather api 
+
+Day 40 - 01/06/2023
+=>Learned Topics - LinkedIn post for Razorpay clone website with tailwind css and 
+                   connecting with other LinkedIn members, installed and started 
+                   started learning about ReactJS
+
+Day 41 - 02/06/2023
+=>Learned Topics - continued learning ReactJS, jsx, react components, react props,
+                   event handling in react, react hooks, react state
+
+Day 42 - 03/06/2023
+=>Learned Topics - continued learning ReactJS, react components and props practice,
+                   started a mini project for holiday packages using useState hook
+
+
+Day 43 - 04/06/2023
+=>Learned Topics - continued learning ReactJS, completed the holiday packages project,
+                   learnt about useEffect hook, started course pack/list mini project
+
+Day 44 - 05/06/2023
+=>Learned Topics - continued learning ReactJS, completed the course pack/list mini project,
+                   added css to the project
+
+
+Day 45 - 06/06/2023
+=>Learned Topics - continued learning ReactJS, created a mini project showing testimonials,    
+                   Earned first badge on LinkedIn by passing LinkedIn Skill Assessment for HTML  
+
+Day 46 - 07/06/2023  
+=>Learned Topics - continued learning ReactJS, started learning about form handelling in reactJS,
+                   made a small form using reactJS, learnt about controlled components
+
+
+Day 47 - 08/06/2023
+=>Learned Topics - continued learning ReactJS, made another form, started learning about react router,
+                   BrowserRouter, Routes, NavLink, Outlet, useNavigate hook, made a navbar using react router 
