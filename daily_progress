@@ -282,3 +282,14 @@ Day 46 - 07/06/2023
 Day 47 - 08/06/2023
 =>Learned Topics - continued learning ReactJS, made another form, started learning about react router,
                    BrowserRouter, Routes, NavLink, Outlet, useNavigate hook, made a navbar using react router 
+
+Day 48 - 09/06/2023
+=>Learned Topics - continued learning ReactJS, started a mini project for login/signup of education platform
+                   started learning about custom hook in react 
+
+
+Day 49 - 10/06/2023
+=>Learned Topics - continued learning ReactJS, created a custom hook for fetching data from GIPHY API,
+                   created an account on developers.giphy.com, generated api key for accessing the GIPHY API,
+                   stored the api key in .env file, used axios instead of fetch to retrieve data from GIPHY API,
+                   started a mini project for showing gifs with the option to render random gifs
