@@ -1,7 +1,9 @@
 # Ashutosh Meher
 
-Check my portfolio website
+Check my portfolio website\
 [css parallax](https://ashutoshme-webdev.github.io/webdev/css/parallax%20effect/parallax.html)\
+\
+or check my other projects directly\
 [css dummy portfolio](https://ashutoshme-webdev.github.io/webdev/css/css_portfolio/portfolio.html)\
 [css modern chair](https://ashutoshme-webdev.github.io/webdev/css/modern%20chair/chair.html)\
 [tailwind razorpay clone](https://ashutoshme-webdev.github.io/webdev/tailwind/Razorpay-clone)\
