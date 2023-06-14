@@ -1,7 +1,7 @@
 # Ashutosh Meher
 
 Check my portfolio website\
-[portfolio](https://ashutoshme-webdev.github.io/webdev/css/css_portfolio/portfolio.html)\
+[portfolio](https://ashutoshme-webdev.github.io/webdev/css/css_portfolio/portfolio.html)
 
 or check my other projects directly\
 [css parallax](https://ashutoshme-webdev.github.io/webdev/css/parallax%20effect/parallax.html)\
