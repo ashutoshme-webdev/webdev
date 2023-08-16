@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: aqua;
+  color: rgb(111, 12, 12);
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .third:hover {
+  color: chocolate;
+}
+body p:hover {
+  color: rgb(17, 205, 142);
+}
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.light {
+  background: white;
+  color: #0000cc;
+}/*# sourceMappingURL=main.css.map */

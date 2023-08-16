@@ -1,0 +1,50 @@
+@import './partial1.scss';
+@import './variables';
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name );
+}
+@mixin flexCenter($dir){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $dir;
+}
+
+@mixin theme($light-theme: true){
+    @if $light-theme{
+        background: lighten($col,100%);
+        color: darken(blue, 10%);
+    }
+
+}
+@mixin mobile{
+    @media  (max-width: 800px){
+        @content
+        
+    }
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+    color: $col;
+    // font-weight: map-get($font-weight, bold );
+    font-weight: weight(bold);
+    .third:hover{
+        color: chocolate;
+        
+    }
+
+    p:hover{
+        color: rgb(17, 205, 142);
+    }
+    @include flexCenter(row);
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.light{
+    @include theme(true);
+}
+
