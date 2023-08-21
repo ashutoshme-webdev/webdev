@@ -232,15 +232,16 @@ console.log("Learning javascript");
 
 // console.log(a.value);
 
-// let rectangle = {
-//     length:2,
-//     breadth:4
-// };
+let rectangle = {
+    length:2,
+    breadth:4,
+    ar:[1,2,3],
+};
 
 //for-in loop  //generally applied on objects
 // for(let key in rectangle ) {
 //     //keys are reflected through key variable 
-//     //values are reflected through rectangle[key]
+//     //values are reflected through rectangle[key]  here key is an expression so '' is not used in bracket notation of object
 //     console.log(key,rectangle[key]);
 // }
 
