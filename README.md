@@ -12,4 +12,4 @@ or check my other projects directly\
 [testimonials](https://ashutoshme-webdev-testimonials.netlify.app)\
 [password generator](https://ashutoshme-webdev-password-generator.netlify.app)\
 [weather app](https://ashutoshme-webdev-weather-app.netlify.app)\
-[youtube clone](https://ashutoshme-webdev-youtube.netlify.app)
+[youtube clone](https://ashutoshme-webdev-youtube-clone.netlify.app)
