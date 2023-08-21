@@ -246,12 +246,12 @@ console.log("Learning javascript");
 
 //for-of loop  // only works on iterables - arrays, maps, string.   hack->to make it work on objects below
 // for(let key of Object.keys(rectangle)) {     //here the Object.keys makes an array of objects with keys of the object
-//     console.log(key);
+//     console.log(key,rectangle[key]);
 // }
 
 // for(let key of Object.entries(rectangle)) {     //here the Object.entries makes an array of objects with key:value pairs of the object
-    //     console.log(key);
-    // }
+//         console.log(key);
+//     }
 
 // if('length' in rectangle) {
 //     console.log('Present');
@@ -277,6 +277,9 @@ console.log("Learning javascript");
 // console.log(dest);
 
 // src.a++;
+// src.b--;
+// dest.c++;
+// console.log(src)
 // console.log(dest);
 
 //Object Cloning #2 through assign function
@@ -294,6 +297,7 @@ console.log("Learning javascript");
 
 // src.a++;
 
+// console.log(src)
 // console.log(dest);
 
 //Object Cloning #3
@@ -330,7 +334,7 @@ console.log("Learning javascript");
 // let message = 
 // `Hello ${lastName},
 
-// Thanks for the Opportunity
+// Thanks for the     Opportunity
 
 // Regards,
 // Babbar`;
@@ -373,7 +377,7 @@ console.log("Learning javascript");
 
 // console.log(numbers.includes(7));
 
-// console.log(numbers.indexOf(4, 2) );
+// console.log(numbers.indexOf(7, 2) );   //here 2 is the starting index to start search from
 
 
 // let courses = [
@@ -381,9 +385,9 @@ console.log("Learning javascript");
 //     {no:2, naam:'Rahul'}
 // ];
 
-//console.log(courses);
+// console.log(courses);
 
-//console.log( courses.includes( {no:1, naam:'Love'} ) );
+// console.log( courses.includes( {no:1, naam:'Love'} ) );
 
 // let course =  courses.find(course => course.naam === 'Kilvish');  //callback function
 
@@ -422,15 +426,21 @@ console.log("Learning javascript");
 
 // let marks = [10,20,30,40,50,60,70,80];
 // let sliced = marks.slice();
-// //let sliced = marks.slice(2);
-// // let sliced = marks.slice(2,6);
+// let sliced = marks.slice(2);
+// let sliced = marks.slice(2,6);
 // console.log(sliced);
+// console.log(marks);
 
 // let ar1=[{len: 5, bre: 10}, {len:3, bre:6}];
 // let ar2=[{rad:50, area:100}, {rad:25, area:75}];
-// let combined=ar1.map(function(item,i){
+// let combined=ar1.map((item,i)=>{
 //     return Object.assign({},item,ar2[i]);
 // });
+// ar1.naam="Hello";
+// ar2.car="benz";
+
+// console.log(ar1)
+// console.log(ar2)
 // console.log(combined);
 
 
@@ -445,16 +455,16 @@ console.log("Learning javascript");
 
 // let arr = [10,20,30,40,50];
 
-// // for(let value of arr) {
-// //     console.log(value);
-// // }
+// for(let value of arr) {
+//     console.log(value);
+// }
 
 // arr.forEach(number=> console.log(number));
 
 
 
 // let numbers = [10,20,30,40,50];
-// const joined = numbers.join(',');
+// const joined = numbers.join(' ,');
 
 // console.log(joined);
 
@@ -511,7 +521,7 @@ console.log("Learning javascript");
 // }
 
 
-
+// stand();
 
 // //Named function assignment
 // let stand = function walk() {
@@ -695,7 +705,7 @@ console.log("Learning javascript");
 //     setTimeout(() => {
 //         console.log('first');
         
-//     }, 1);
+//     }, 10);
 //     resolve(true);
 // });
 // let output=p1.then(() => {
