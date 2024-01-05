@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "react-scripts build",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,8 +24,5 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "stripe": "^12.4.0"
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1"
   }
 }
