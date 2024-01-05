@@ -10,6 +10,6 @@ or check my other projects directly\
 [gif generator](https://ashutoshme-webdev-gif-generator.netlify.app/)\
 [studynotion app](https://ashutoshme-webdev-studynotion.netlify.app)\
 [testimonials](https://ashutoshme-webdev-testimonials.netlify.app)\
-[password generator](https://ashutoshme-webdev-password-generator.netlify.app)\
+[password generator](https://ashutoshme-webdev.github.io/webdev/javascript/passwordGenerator/index.html)\
 [weather app](https://ashutoshme-webdev-weather-app.netlify.app)\
 [youtube clone](https://ashutoshme-webdev-youtube-clone.netlify.app)
