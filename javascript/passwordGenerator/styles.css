@@ -37,7 +37,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 450px;
+    max-width: 30rem;
 }
 
 h1 {
@@ -164,8 +164,8 @@ h1 {
 
 .check input{
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 1.4rem;
+    height: 1.4rem;
     border: 1px solid var(--vb-cyan);
     cursor: pointer;
     position: relative;
@@ -182,16 +182,16 @@ h1 {
     content: '✔';
     position: absolute;
     color: var(--dk-text);
-    font-size:1.05rem;
+    font-size:1rem;
     font-weight: 600;
     left:50%;
-    top:-3.5px;
+    top:-0.45em;
     transform: translateX(-50%)  translateY(40%);
 }
 
 .check label {
     color: var(--pl-white);
-    font-size: 1.25rem;
+    font-size: 1.11rem;
     letter-spacing: 0.75px;
 }
 
