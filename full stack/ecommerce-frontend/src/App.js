@@ -144,7 +144,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: '/stripe-checkout/',
+    path: '/stripe-checkout',
     element: (
       <Protected>
         <StripeCheckout></StripeCheckout>
